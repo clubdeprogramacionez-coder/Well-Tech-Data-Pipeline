@@ -1,16 +1,41 @@
-# Analisis-Estratigrafico-Python
-Correlación Estratigráfica de Pozos Notebook para visualizar y comparar registros de pozo. Carga datos desde archivos CSV, genera gráficos comparativos entre pozos y realiza análisis litológico mediante líneas de corte en el registro Gamma Ray.
+# 🚀 Pipeline Integrado: Evaluación de Formaciones y Monitoreo de Producción
+Este repositorio contiene dos herramientas clave para la gestión de activos petroleros, cubriendo desde la caracterización geológica del subsuelo hasta el monitoreo del rendimiento operativo en superficie.
 
------
 
-## Descripción del Proyecto
-Este proyecto implementa una solución de Arquitectura de Datos (80%) y Software (20%) orientada a la ingeniería petrolera. El sistema automatiza la lectura de datos crudos provenientes de sensores de fondo de pozo (archivos CSV), ejecuta un control de calidad para eliminar ruido de las herramientas de medición y genera una visualización estratigráfica estandarizada bajo las normativas de la industria energética.
+----
 
-## 📊 Arquitectura del Sistema
-Ingesta de Datos (Data Ingestion): Lectura eficiente de flujos de datos estructurados directamente desde archivos de texto plano sin dependencias pesadas.
-Control de Calidad (Data Quality): Filtrado automatizado de anomalías de lectura (valores fuera de rango o errores comunes de calibración del sensor como valores nulos o negativos).
-Transformación y Clasificación (Data Transformation): Segmentación matemática en tiempo de ejecución para diferenciar litologías (Arenas vs. Arcillas) con base en una línea de corte API.
-Visualización Técnica (Data Visualization): Renderizado modular en Matplotlib aplicando las convenciones internacionales de la petrofísica (eje vertical invertido para profundidad y escala horizontal en la parte superior).
+
+## 1. Módulo de Caracterización: Correlación Estratigráfica
+Notebook para visualizar y comparar registros de pozo.
+
+Este componente implementa una solución de Arquitectura de Datos orientada a la ingeniería petrolera. El sistema automatiza la lectura de datos crudos de sensores de fondo de pozo (archivos CSV), ejecuta un control de calidad para eliminar ruido y genera una visualización estratigráfica estandarizada bajo normativas de la industria.
+
+**📊 Características del Sistema**
+1. Ingesta de Datos: Lectura eficiente de flujos estructurados desde archivos de texto plano.
+2. Transformación y Clasificación: Segmentación matemática para diferenciar litologías (Arenas vs. Arcillas) con base en una línea de corte API.
+3. Visualización Técnica: Renderizado modular aplicando convenciones petrofísicas (eje vertical invertido y escala horizontal superior).
+
+## 2. Módulo de Gestión: Dashboard de Producción Petrolera
+Herramienta de monitoreo operativo y diagnóstico de activos.
+
+Este módulo complementa la caracterización geológica al trasladar el análisis a la superficie. Permite a los ingenieros de producción evaluar el comportamiento mensual de los pozos, calcular el impacto acumulado y diagnosticar el rendimiento mediante indicadores visuales.
+
+**📊 Capacidades del Dashboard**
+1. Análisis de Desempeño: Visualización de producción mensual mediante diagramas de barras apiladas.
+2. Tendencia Temporal: Monitoreo del volumen de producción acumulada anual.
+3. Distribución de Activos: Gráficos de pastel para identificar la participación proporcional de cada pozo en el rendimiento total del campo.
+
+Diagnóstico Operativo: Implementación de lógica condicional para clasificar pozos en niveles de rendimiento (Bajo, Normal, Crítico), facilitando la toma de decisiones para intervenciones técnicas.
+
+
+## 💡 Flujo de Trabajo (Arquitectura del Pipeline)
+La integración de ambos módulos representa el ciclo de vida del dato:
+
+1. Exploración: Identificación de reservorios mediante correlación estratigráfica.
+
+2. Explotación: Monitoreo de la rentabilidad a través del Dashboard de producción.
+
+Este enfoque permite a los profesionales pasar de la visualización de datos geológicos crudos a la toma de decisiones estratégicas de negocio.
 
 
 ## 🛠️ Tecnologías Utilizadas
@@ -27,7 +52,7 @@ El pipeline genera de manera automática un reporte visual en alta definición (
 
 Clona este repositorio en tu máquina local:
 ```bash
-git clone https://github/turutagithub.com
+git clone https://github.com
 ```
 Asegúrate de tener instalado Matplotlib:
 ```bash
