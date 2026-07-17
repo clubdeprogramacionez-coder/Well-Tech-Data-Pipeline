@@ -23,7 +23,7 @@ El pipeline genera de manera automática un reporte visual en alta definición (
 
 
 
-##🚀 Cómo Ejecutar el Proyecto Localmente
+## 🚀 Cómo Ejecutar el Proyecto Localmente
 
 Clona este repositorio en tu máquina local:
 ```bash
