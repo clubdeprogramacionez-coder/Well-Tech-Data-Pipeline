@@ -52,7 +52,7 @@ El pipeline genera de manera automática un reporte visual en alta definición (
 
 Clona este repositorio en tu máquina local:
 ```bash
-git clone https://github.com
+git clone https://github.com/clubdeprogramacionez-coder/Well-Tech-Data-Pipeline.com
 ```
 Asegúrate de tener instalado Matplotlib:
 ```bash
@@ -60,6 +60,6 @@ pip install matplotlib
 ```
 Ejecuta el script principal desde tu terminal o VS Code:
 ```bash
-python src/tuproyecto.py
+python src/Analisis_y_Correlacion.ipynb.py
 ```
 Copyright (c) 2026 Club de Programación Esime Zacatenco y AeroScript-DYGM
